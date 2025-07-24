@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Books - Library</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="readBook.css">
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <h1>City Library</h1>
+      <button class="home-btn" onclick="location.href='index.html'">Home</button>
+    </div>
+    <h3>Library Book Management</h3>
+    <nav>
+      <button onclick="location.href='createBook.html'">Create</button>
+      <button onclick="location.href='readBook.html'">Read</button>
+      <button onclick="location.href='updateBook.html'">Update</button>
+      <button onclick="location.href='deleteBook.html'">Delete</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="tableContainer">
+      <h2>Library Catalog</h2>
+      <table id="booksTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Genre</th>
+            <th>Year</th>
+            <th>Publisher</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Rows added by JS -->
+        </tbody>
+      </table>
+      <p id="message"></p>
+    </div>
+  </main>
+
+  <script src="readBook.js"></script>
+</body>
+</html>

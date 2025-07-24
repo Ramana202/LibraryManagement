@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Book - Library</title>
+  <link rel="stylesheet" href="createBook.css">
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <h1>City Library</h1>
+      <button class="home-btn" onclick="location.href='index.html'">Home</button>
+    </div>
+    <h3>Library Book Management</h3>
+    <nav>
+      <button onclick="location.href='createBook.html'">Create</button>
+      <button onclick="location.href='readBook.html'">Read</button>
+      <button onclick="location.href='updateBook.html'">Update</button>
+      <button onclick="location.href='deleteBook.html'">Delete</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="formContainer">
+      <form id="bookForm">
+        <div class="form-group">
+          <label for="title">Book Title</label>
+          <input type="text" id="title" required>
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" required>
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN</label>
+          <input type="text" id="isbn" required>
+        </div>
+        <div class="form-group">
+          <label for="genre">Genre</label>
+          <input type="text" id="genre" required>
+        </div>
+        <div class="form-group">
+          <label for="year">Year Published</label>
+          <input type="number" id="year" required>
+        </div>
+        <div class="form-group">
+          <label for="publisher">Publisher</label>
+          <input type="text" id="publisher" required>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="message"></p>
+    </div>
+  </main>
+
+  <script src="createBook.js"></script>
+</body>
+</html>

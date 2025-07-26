@@ -1,0 +1,43 @@
+#controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#controls input,
+#controls select {
+  padding: 8px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#report {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#updateTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+#updateTable th, #updateTable td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#updateTable th {
+  background-color: #005cbf;
+  color: white;
+}
+
+#updateTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100px;
+}

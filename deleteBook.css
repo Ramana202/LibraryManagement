@@ -1,0 +1,37 @@
+#controls {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#controls input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#report {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#deleteTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+#deleteTable th, #deleteTable td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#deleteTable th {
+  background-color: #005cbf;
+  color: white;
+}
+
+#deleteTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

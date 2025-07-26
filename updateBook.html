@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Books - Library</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="updateBook.css">
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <h1>City Library</h1>
+      <button class="home-btn" onclick="location.href='index.html'">Home</button>
+    </div>
+    <h3>Library Book Management</h3>
+    <nav>
+      <button onclick="location.href='createBook.html'">Create</button>
+      <button onclick="location.href='readBook.html'">Read</button>
+      <button onclick="location.href='updateBook.html'">Update</button>
+      <button onclick="location.href='deleteBook.html'">Delete</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="controls">
+      <input type="text" id="searchBox" placeholder="Search book title...">
+      <select id="sortSelect">
+        <option value="">Sort by</option>
+        <option value="year">Year</option>
+      </select>
+    </section>
+
+    <section id="report">
+      <p>Total Books: <span id="totalCount">0</span></p>
+      <p>Average Year: <span id="avgYear">0</span></p>
+    </section>
+
+    <table id="updateTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Year</th>
+          <th>Publisher</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="updateBody">
+        <!-- JS fills this -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="updateBook.js"></script>
+</body>
+</html>
